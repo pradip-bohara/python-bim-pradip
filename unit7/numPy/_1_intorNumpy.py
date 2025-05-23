@@ -52,6 +52,16 @@ arr3d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
 
 print(arr3d)
 
+array_3d = np.array([
+    [[1,2,3], [4,5,6]], # first layer 0
+    [[7, 8, 9], [0,1,2]], # second layer 1
+    [[4,5,6],[7,8,9]]   # third layer 2
+])
+
+print(array_3d.ndim)
+print(array_3d.shape)
+
+print(array_3d[0][1][2])
 
 #Define the number od dimensions by using the ndmin arrgument.
 arr4d = np.array([1, 2, 3, 4], ndmin=5)
